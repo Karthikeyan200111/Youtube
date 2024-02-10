@@ -6,7 +6,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const ChannelCard = ({channelCardDetails,marginTop,backgroundColor,color}) => {
     
   return (
-    <div className='mt-4 rounded-md w-80 md:h-96 md:p-8 ' style={{marginTop,backgroundColor}}>
+    <div className='mt-4 rounded-md md:w-80 md:h-96 md:p-8 ' style={{marginTop,backgroundColor}}>
         <Link to={`/channel/${channelCardDetails?.id?.channelId}`}>
             <div className='flex flex-col items-center justify-center w-64 p-3'>
                 <img src={channelCardDetails?.snippet?.thumbnails?.high?.url || demoProfilePicture} 

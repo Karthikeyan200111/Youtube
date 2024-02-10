@@ -54,7 +54,7 @@ const VideoDetails = () => {
   } = videoDetails;
 
   return (
-    <div className="flex md:flex-row flex-col h-[90vh] bg-slate-400 overflow-y-auto  ">
+    <div className="flex md:flex-row flex-col h-[90vh] bg-slate-400 overflow-y-auto gap-40 md:gap-0 ">
       <div className="p-4 md:w-3/5 w-full h-2/4 md:h-3/4  md:sticky">
         <ReactPlayer
           url={`https://www.youtube.com/watch?v=${id}`}
@@ -95,7 +95,7 @@ const VideoDetails = () => {
         </div>
       </div>
 
-      <div className="w-3/5 h-[90vh] mx-auto md:overflow-y-auto flex ">
+      <div className="w-3/5 h-[90vh] mx-auto md:overflow-y-auto ">
         <Videos videos={videos}  width='100%'/>
       </div>
     </div>

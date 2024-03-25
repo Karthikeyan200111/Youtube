@@ -33,7 +33,7 @@ const Feed = () => {
         <SideBar selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory} />
       </div>
-      <div className='md:w-4/5 w-full h-[90vh] overflow-y-auto bg-slate-400 p-2 '>
+      <div className='md:w-4/5 w-full h-[92vh] overflow-y-auto bg-slate-400 p-2 '>
         <p className='text-red-600 text-3xl font-bold mx-4'> {selectedCategory} <span className='text-white'>Videos</span></p>
         <Videos
         videos={videos}  />
